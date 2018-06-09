@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/one-page-wonder.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <style>
+      ul.special {
+        list-style: none;
+      }
+
+      ul.special li:before {
+        content: '✓';
+      }
+      .blurry-text {
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+      }
+    </style>
+</head>
+<body>
+
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+
+<script>
+
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+
+    //Shape of you
+            function play() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214823&authkey=APQTcHZ3EzQaDM0" type="audio/mpeg">';
+    }
+            //Bharath ane nenu
+            function play1() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214821&authkey=AGavfa-DNoMA2ZQ" type="audio/mpeg">';
+            }
+            //Demons
+            function play2() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214813&authkey=AC7WkEvreTfyBmA" type="audio/mpeg">';
+            }
+            //Thunder
+            function play3() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214819&authkey=AKX-62429gfpOJQ" type="audio/mpeg">';
+            }
+            //We don't talk anymore
+            function play4() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214824&authkey=AJIyxfnK2uqKbIM" type="audio/mpeg">';
+            }
+            //attention
+            function play5() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=6896E6AB779AF401&resid=6896E6AB779AF401%212287&authkey=AHZZEMev9mipN1c" type="audio/mpeg">';
+            }
+            //In the End
+            function play6() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214812&authkey=AKudNLc0I41g8mI" type="audio/mpeg">';
+            }
+            //Cheap Thrills
+            function play7() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214826&authkey=AMF8TXwBJT13yQY" type="audio/mpeg">';
+            }
+            //Never be the same
+            function play8() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214827&authkey=AGP86avlYlnAFrg" type="audio/mpeg">';
+            }
+            //Gaali Valuga
+            function play9() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214830&authkey=ABHvhSnoaGMXpPc" type="audio/mpeg">';
+            }
+            //Unattundi Gundey
+            function play10() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=6896E6AB779AF401&resid=6896E6AB779AF401%212287&authkey=AHZZEMev9mipN1c" type="audio/mpeg">';
+            }
+            //Friends - marshmallow
+            function play11() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=C63B3BEA2EC4E0AF&resid=C63B3BEA2EC4E0AF%214828&authkey=ABvopoNuXz7U57g" type="audio/mpeg">';
+            }
+            //Wolves - marshmallow
+            function play12() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=6896E6AB779AF401&resid=6896E6AB779AF401%212287&authkey=AHZZEMev9mipN1c" type="audio/mpeg">';
+            }
+            //Bali Bali
+            function play13() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=6896E6AB779AF401&resid=6896E6AB779AF401%212287&authkey=AHZZEMev9mipN1c" type="audio/mpeg">';
+            }
+            //Dandalayya
+            function play14() {
+                document.getElementById('player').innerHTML = '<audio class="player" autoplay id="audio-player" controls="controls" src="https://onedrive.live.com/download?cid=6896E6AB779AF401&resid=6896E6AB779AF401%212287&authkey=AHZZEMev9mipN1c" type="audio/mpeg">';
+            }
+    </script>
+</body>
+</html>
